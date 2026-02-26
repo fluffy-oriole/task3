@@ -38,7 +38,15 @@
                     }
                 }
             }
-            return answer;
+            if (answer != "")
+            {
+                return answer.Remove(answer.Length - 1);
+            }
+            else
+            {
+                return answer;
+            }
+            
         }
     }
     internal class Program
